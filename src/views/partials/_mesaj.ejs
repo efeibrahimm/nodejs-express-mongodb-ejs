@@ -1,0 +1,21 @@
+<% validation_errors.forEach(element => { %>
+        <div class="card bg-danger text-white shadow p-0 mb-1">
+            <div class="card-body p-0">
+                <%- element.msg  %>
+            </div>
+        </div>
+<% }) %>
+<% success_message.forEach(element => { %>
+        <div class="card bg-success text-white shadow p-0 mb-1">
+            <div class="card-body p-0">
+                <%- element.msg  %>
+            </div>
+        </div>
+<% }) %>
+<% login_errors.forEach(element => { %>
+        <div class="card bg-danger text-white shadow p-0 mb-1">
+            <div class="card-body p-0">
+                <%- element  %>
+            </div>
+        </div>
+<% }) %>
