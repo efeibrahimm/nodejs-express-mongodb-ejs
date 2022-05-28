@@ -179,7 +179,6 @@ const newPasswordView = (req,res,next)=>{
         jwt.verify(token,process.env.JWT_SECRET,async(error,decode)=>{
             try {
                 if (error) {
-                    console.log(error)
                     req.flash('error','Kod Hatalı veya Süresi Geçmiş Lütfen Tekrar Şifremi Unuttum Ekranına Gidip yeni kod alın');
                     res.redirect('/login');                  
                 }
